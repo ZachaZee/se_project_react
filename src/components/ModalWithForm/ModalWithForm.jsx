@@ -16,7 +16,7 @@ function ModalWithForm() {
                 <label htmlFor="imageUrl" className="modal__label">
                     Image {" "}
                     <input type="url" 
-                    className="modal__input" 
+                    className="modal__linput" 
                     id="imageUrl" 
                     placeholder="Image URL"
                     />
