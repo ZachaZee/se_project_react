@@ -12,7 +12,8 @@ function App() {
         <Header />
         <Main weatherData={weatherData} />
       </div>
-      <ModalWithForm />
+      <ModalWithForm>
+      </ModalWithForm>
     </div>
   );
 }

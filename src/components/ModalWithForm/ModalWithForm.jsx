@@ -1,11 +1,14 @@
+import "./ModalWithForm.css";
+
 function ModalWithForm() {
   return (
     <div className="modal">
-      <form className="modal__form">
-        <h2 className="modal__title">New Garment</h2>
+        <div className="modal__content">
+            <h2 className="modal__title">New Garment</h2>
         <button type="button" className="modal__close">
           CLOSE
         </button>
+      <form className="modal__form">
         <label htmlFor="name" className="modal__label">
           Name
           <input
@@ -26,19 +29,21 @@ function ModalWithForm() {
         </label>
         <fieldset className="radiobuttons">
           <legend className="modal__legend">"Select the weather type:"</legend>
-          <label htmlFor="" className="modal__label modal__label_type_radio">
-            <input type="radio" className="modal__radio-input" />
+          <label htmlFor="hot" className="modal__label modal__label_type_radio">
+            <input id="hot" type="radio" className="modal__radio-input" />Hot
           </label>
 
-          <label htmlFor="" className="modal__label modal__label_type_radio">
-            <input type="radio" className="modal__radio-input" />
+          <label htmlFor="warm" className="modal__label modal__label_type_radio">
+            <input id="warm" type="radio" className="modal__radio-input" />Warm
           </label>
 
-          <label htmlFor="" className="modal__label modal__label_type_radio">
-            <input type="radio" className="modal__radio-input" />
+          <label htmlFor="cold" className="modal__label modal__label_type_radio">
+            <input id="cold" type="radio" className="modal__radio-input" />Cold
           </label>
         </fieldset>
+        <button type="sumbit" className="modal__submit"></button>
       </form>
+      </div>
     </div>
   );
 }
