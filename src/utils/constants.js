@@ -42,3 +42,10 @@ export const defaultClothingItems = [
       "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Jacket.png?etag=f4bb188deaa25ac84ce2338be2d404ad",
   },
 ];
+
+export const coordinates = {
+  latitude:33.363567,
+  longitute:-111.73738
+};
+
+export const APIkey = "f8f017c2ba789ffde993f489fc33deee";

@@ -12,7 +12,7 @@ function Header({ handleAddClick }) {
       <p className="header__date-and-location">{currentDate}, LOCATION</p>
       <button onClick={handleAddClick} type="button" className="header__add-clothes-btn">+ ADD CLOTHES</button>
       <div className="header__user-container">
-        <p className="header__username">Terrence Tegegne f8f017c2ba789ffde993f489fc33deee</p>
+        <p className="header__username">Terrence Tegegne</p>
         <img src={avatar} alt="Terrence Tegegne" className="header__avatar" />
       </div>
     </header>
