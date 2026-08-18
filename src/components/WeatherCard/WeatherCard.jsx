@@ -1,31 +1,34 @@
 import { filterWeatherData } from "../../utils/weatherApi";
-import "./WeatherCard.css"
+import "./WeatherCard.css";
 
-import { weatherOptions } from "../../utils/constants";
+import { weatherOptions, defaultWeatherOptions } from "../../utils/constants";
 
 function WeatherCard({ weatherData }) {
   const filteredOptions = weatherOptions.filter((option) => {
     return (
-      option.day === weatherData.isDay && 
+      option.day === weatherData.isDay &&
       option.condition === weatherData.condition
-    ); 
-  }); 
+    );
+  });
 
-  const weatherOptionUrl = filteredOptions[0]?.url;
-  const weatherOptionCondition = filteredOptions[0]?.condition;
-  const weatherOptionDay = filteredOptions[0]?.isDay;
-
-
+  let weatherOption;
+  if (filteredOptions.length === 0) {
+    weatherOption = defaultWeatherOptions[weatherData.isDay ? "day" : "night"];
+  } else {
+    weatherOption = filteredOptions[0];
+  }
 
   return (
     <section className="weather-card">
       <p className="weather-card__temp">{weatherData?.temp?.F}&deg;F</p>
-      <img src={weatherOptionUrl} alt={`Card showing ${
-        weatherOptionDay ? "day" : "night"
-      } ${weatherOptionCondition} weather`}
-      className="weather-card__image" />
-    </
-    section>
+      <img
+        src={weatherOption?.url}
+        alt={`Card showing ${
+          weatherOption?.isDay ? "day" : "night"
+        } ${weatherOption?.condition} weather`}
+        className="weather-card__image"
+      />
+    </section>
   );
 }
 
