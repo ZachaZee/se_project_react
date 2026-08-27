@@ -2,7 +2,7 @@ import "./Main.css";
 import WeatherCard from "../WeatherCard/WeatherCard";
 import ItemCard from "../ItemCard/ItemCard";
 import { defaultClothingItems } from "../../utils/constants";
-
+import "../../vendor/fonts/fonts.css"
 
 function Main({ weatherData, handleCardClick }) {
   return (

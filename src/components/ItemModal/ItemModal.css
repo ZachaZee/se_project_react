@@ -1,0 +1,10 @@
+.modal__content_type_image {
+  padding: 0; 
+  overflow: hidden; 
+}
+
+.modal__image {
+  width: 100%;
+  margin: 0; 
+  display: block; /* Removes a tiny default gap at the bottom of images */
+}

@@ -21,6 +21,9 @@
     position: absolute;
     top: 20px;
     right: 28px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../assets/xbutton.png")
 }
 
 .modal__content {
@@ -29,7 +32,9 @@
     padding: 28px 28px 36px;
     max-width: 496px;
     width: 100%;
+    height: 436px;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .modal__form {
@@ -45,9 +50,10 @@
 .modal__fieldset {
     border: none;
     padding: 0;
+    
 }
 
-modal__radio-input {
+.modal__radio-input {
     display: flex;
     flex-direction: column;
 }
