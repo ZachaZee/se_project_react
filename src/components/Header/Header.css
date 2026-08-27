@@ -25,3 +25,7 @@
 .header__username {
   margin: 0;
 }
+
+.header__add-clothes-btn {
+  border: none;
+}
