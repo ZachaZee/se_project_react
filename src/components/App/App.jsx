@@ -57,8 +57,8 @@ function App() {
         />
       </div>
       <ModalWithForm
-        title="New Garment"
-        buttonText="Add Garment"
+        title="New garment"
+        buttonText="Add garment"
         activeModal={activeModal}
         onClose={closeActiveModal}
       >
@@ -72,7 +72,7 @@ function App() {
           />
         </label>
         <label htmlFor="imageUrl" className="modal__label">
-          Image{"Image URL"}
+          Image
           <input
             type="url"
             className="modal__input"
@@ -81,7 +81,7 @@ function App() {
           />
         </label>
         <fieldset className="radiobuttons">
-          <legend className="modal__legend">"Select the weather type:"</legend>
+          <legend className="modal__legend">Select the weather type:</legend>
           <label htmlFor="hot" className="modal__label modal__label_type_radio">
             <input
               id="hot"

@@ -16,6 +16,8 @@
 }
 .modal__title {
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
 }
 .modal__close {
     position: absolute;
@@ -45,15 +47,58 @@
 
 .modal__input {
     display: block;
+    border-left: none;
+    border-top: none;
+    border-right:none;
+    width: 100%;
+}
+
+.modal__label {
+    padding-top: 24px
+}
+
+.modal__label_type_radio{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  align-items: center;
+  gap: 8px;
+  padding:0px;
 }
 
 .modal__fieldset {
     border: none;
     padding: 0;
+    padding-bottom: 32px;
     
+}
+
+.modal__legend{
+    padding-top: 24px;
 }
 
 .modal__radio-input {
     display: flex;
     flex-direction: column;
+
+}
+.modal__submit {
+    height: 36px;
+    width: 124px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+fieldset.radiobuttons {
+  padding: 0;
+  border: none;
+  margin: 0;
+  padding-bottom: 32px;
+}
+.radiobuttons {
+    border: none;
+    padding: none;
 }
